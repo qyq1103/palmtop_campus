@@ -1,0 +1,156 @@
+/**框架*/
+.layui-layout-admin .layui-header {
+    background: #393D49;
+    border-bottom: 5px solid #A91BBF;
+}
+
+.layui-layout-admin .layui-header .layui-nav-bar {
+    background: transparent;
+}
+
+.layui-nav .layui-nav-child dd.layui-this a {
+    background: #A91BBF;
+}
+
+.layui-layout-right {
+    right: 20px;
+}
+
+.layui-layout-admin .layui-side {
+    top: 65px;
+    width: 160px;
+    border-right: 5px solid #A91BBF;
+}
+
+.layui-nav-tree {
+    width: 160px;
+}
+
+.layui-nav-tree .layui-nav-bar {
+    background: transparent;
+}
+
+.layui-nav-tree .layui-nav-item {
+    text-align: center;
+}
+
+.layui-layout-admin .layui-body {
+    top: 65px;
+    bottom: 0;
+    left: 165px;
+    padding: 10px;
+}
+
+.layui-form-select dl dd.layui-this {
+    background: #A91BBF;
+}
+
+.layui-table th, .layui-table td {
+    text-align: center;
+}
+
+.webuploader-container {
+    position: relative;
+}
+
+.webuploader-element-invisible {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+/**100%宽度*/
+.width1 {
+    width: 100%;
+}
+
+/**填充10px*/
+.padding10 {
+    padding: 10px;
+}
+
+/**水平居中*/
+.center {
+    text-align: center;
+}
+
+/**浏览器版本过低，登录超时*/
+.ver-container, .over-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -500px;
+    width: 1000px;
+    text-align: center;
+    color: #333;
+}
+
+/*登录页面*/
+.index-bg {
+    background: #7103BD;
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -240px;
+    padding: 40px;
+    width: 400px;
+    height: 280px;
+    border: 1px solid #A91BBF;
+    box-shadow: 0px 0px 20px #A91BBF;
+}
+
+.login-box .logo {
+    text-align: center;
+    color: #A91BBF;
+}
+
+.login-box .logo strong {
+    display: block;
+    font-size: 28px;
+}
+
+.login-box .logo em {
+    display: block;
+    font-size: 20px;
+}
+
+.login-box .layui-form-item {
+    margin-top: 30px;
+}
+
+/**后台页面*/
+.layui-layout-admin .layui-logo {
+    width: 390px;
+    font-size: 25px;
+    color: #eee;
+}
+
+.layui-layout-admin .layui-logo span {
+    font-size: 30px;
+    color: #EF3C2E;
+}
+
+.query .layui-form-item {
+    margin-bottom: 0;
+}
+
+.query .layui-form-item .layui-inline {
+    margin: 0
+}
+
+.tableLarge {
+    margin: 0 auto;
+    width: 1150px;
+}
+
+.err {
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #FF5722;
+    text-align: center;
+    color: #FF5722;
+}

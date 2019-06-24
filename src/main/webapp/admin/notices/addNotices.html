@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>新增通知</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link type="text/css" rel="stylesheet" href="/static/layui/css/layui.css" />
+<link type="text/css" rel="stylesheet" href="/static/css/main.css" />
+<script type="text/javascript" src="/static/layui/layui.js"></script>
+<script type="text/javascript" src="/static/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/static/js/webuploader.min.js"></script>
+<script type="text/javascript" src="/static/js/main.js"></script>
+<style>
+.layui-form-label {
+	width: 150px;
+}
+</style>
+
+</head>
+<body>
+
+	<div class="padding10">
+		<form class="layui-form layui-form-pane">
+			<div class="layui-form-item">
+				<label class="layui-form-label">标题</label>
+				<div class="layui-input-inline">
+					<input type="text" id="title" name="title" lay-verify="required" placeholder="标题" class="layui-input">
+				</div>
+			</div>
+			<div class="layui-form-item layui-form-text">
+				<label class="layui-form-label">内容</label>
+				<div class="layui-input-block">
+					<textarea id="notice_body" name="notice_body" placeholder="请输入内容" class="layui-textarea"></textarea>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">发布部门</label>
+				<div class="layui-input-inline">
+					<input type="text" id="department" name="department" lay-verify="required" placeholder="发布部门" class="layui-input">
+				</div>
+			</div>
+			<div class="center">
+				<button class="layui-btn" lay-submit lay-filter="saveNotices">立即提交</button>
+				<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

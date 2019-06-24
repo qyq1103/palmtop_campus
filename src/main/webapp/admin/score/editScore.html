@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>修改成绩</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link type="text/css" rel="stylesheet" href="/static/layui/css/layui.css" />
+<link type="text/css" rel="stylesheet" href="/static/css/main.css" />
+<script type="text/javascript" src="/static/layui/layui.js"></script>
+<script type="text/javascript" src="/static/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/static/js/webuploader.min.js"></script>
+<script type="text/javascript" src="/static/js/main.js"></script>
+<style>
+.layui-form-label {
+	width: 150px;
+}
+</style>
+
+</head>
+<body>
+
+	<div class="padding10">
+		<form class="layui-form layui-form-pane">
+			<input type="hidden" id="id" name="id" value="#(score.id)">
+			<div class="layui-form-item">
+				<label class="layui-form-label">学号</label>
+				<div class="layui-input-inline">
+					<input type="text" id="student_id" name="student_id" value="#(score.student_id)" lay-verify="required" disabled="disabled" class="layui-input">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">名字</label>
+				<div class="layui-input-inline">
+					<input type="text" id="student_name" name="student_name" value="#(score.student_name)" lay-verify="required" disabled="disabled" class="layui-input">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">课程</label>
+				<div class="layui-input-inline">
+					<input type="text" id="course_name" name="course_name" value="#(score.course_name)" lay-verify="required" disabled="disabled" class="layui-input">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">成绩</label>
+				<div class="layui-input-inline">
+					<input type="text" id="score" name="score" value="#(score.score)" lay-verify="required" placeholder="成绩" class="layui-input">
+				</div>
+			</div>
+			<div class="center">
+				<button class="layui-btn" lay-submit lay-filter="editScore">立即提交</button>
+				<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
